@@ -68,4 +68,7 @@ attach_events('widget_button_d25','rrc_h2y_m02_d25')
 attach_events('widget_button_d30','rrc_h2y_m02_d30')
 attach_events('widget_button_d40','rrc_h2y_m02_d40')
 // Report load to console
-debug_log('RRC Mod: Init custom button overide');
+debug_log('RRC Mod: Init custom button override');
+// Add tooltips to layer switch
+d.querySelector('img[src^="https://Trade.maps.arcgis.com/sharing/rest/content/items/96c33ca4dbc54b58ba43db57b61c7784/info/thumbnail/ago_downloaded.png"]').setAttribute('title','Basemap')
+d.querySelector('img[src^="https://Trade.maps.arcgis.com/sharing/rest/content/items/8f9b13cc63a84d1da0558dfd0dbf51ee/info/thumbnail/ago_downloaded.png"]').setAttribute('title','Satellite View')
