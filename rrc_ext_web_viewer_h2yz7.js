@@ -39,12 +39,12 @@ function attach_basemap_events(widgetid, lyrkey) {
 //Attach events
 setTimeout(function () {
   // Attach layer events
-  attach_layer_events("widget_button_d25", "d25");
-  attach_layer_events("widget_button_d30", "d30");
-  attach_layer_events("widget_button_d40", "d40");
+  attach_layer_events("widget_button_2", "d25");
+  attach_layer_events("widget_button_3", "d30");
+  attach_layer_events("widget_button_4", "d40");
   // Attach basemap events
-  attach_basemap_events("widget_23", "sat");
-  attach_basemap_events("widget_24", "topo");
+  attach_basemap_events("widget_button_sat", "sat");
+  attach_basemap_events("widget_button_base", "topo");
 }, 1000);
 
 // Report load to console
