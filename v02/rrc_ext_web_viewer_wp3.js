@@ -48,7 +48,7 @@ setTimeout(function () {
   // Attach basemap events
   attach_basemap_events("widget_button_sat", "sat");
   attach_basemap_events("widget_button_base", "topo");
-  attach_basemap_events("widget_30", "event2021");
+  attach_basemap_events("widget_28", "event2021");
 }, 1000);
 
 // Report load to console
