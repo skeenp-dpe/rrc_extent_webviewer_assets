@@ -1,4 +1,4 @@
-body {font-family:Arial;font-size:12px;margin:6px;background:#fff}
+body, table {font-family:Arial;font-size:12px;margin:6px;background:#fff}
 th{background:#ebebeb;text-align:center;}
 tr{text-align:center;}
 tr th:first-child,tr td:first-child{text-align:left;}
