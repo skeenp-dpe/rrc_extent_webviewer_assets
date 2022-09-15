@@ -1,5 +1,5 @@
 // Set debug flag
-const _debug = true;
+const _debug = false;
 
 // Get parent window
 var w = top.window;
