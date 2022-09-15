@@ -1,5 +1,5 @@
 // Set debug flag
-const debug = false;
+const _debug = true;
 
 // Get parent window
 var w = top.window;
@@ -7,7 +7,7 @@ var d = w.document;
 
 // Set debug function
 function debug_log(msg) {
-  if (debug == true) {
+  if (_debug == true) {
     console.log(msg);
   }
 }
