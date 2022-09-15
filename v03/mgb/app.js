@@ -16,7 +16,6 @@ const bm_ids = {
   sat: ["base_worldimagery","base_reflayer"],
   event2021: ["base_eventimagery","base_reflayer"]
 };
-
 //Attach events
 setTimeout(function () {
   // Attach layer events
@@ -30,6 +29,5 @@ setTimeout(function () {
   attach_basemap_events("widget_button_base", "topo");
   attach_basemap_events("widget_button_event", "event2021");
 }, 1000);
-
 // Report load to console
 debug_log("RRC Mod: Init custom button override");
