@@ -8,7 +8,7 @@ const lyr_ids = {
   w32: ["rrc_mbg_w32","rrc_mbg_w32_mask"],
   w36: ["rrc_mbg_w36","rrc_mbg_w36_mask"],
   w40: ["rrc_mbg_w40","rrc_mbg_w40_mask"],
-  hide: ""
+  hide: null
 };
 // Set basemap names
 const bm_ids = {

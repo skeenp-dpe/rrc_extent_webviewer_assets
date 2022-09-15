@@ -22,6 +22,8 @@ function toggle_lyr(mapid, dsid, lyrids, lyrkey) {
   let vw = vws[ds_id];
   // Itterate all reference layers
   for (const [key, val] of Object.entries(lyrids)) {
+    // Check layer is not none
+    if (!val){continue;}
     // Check passed lyr is an array
     let lyrdefn = val;
     if (!Array.isArray(lyrdefn)) {
