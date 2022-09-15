@@ -20,18 +20,18 @@ function toggle_lyr(mapid, dsid, lyrids, lyrkey) {
   let ds_id = mapid + "-" + dsid;
   // Fetch requested map view
   let vw = vws[ds_id];
+  // Setup layer references
+  let lyrs_hide = [];
+  let lyrs_show = [];
   // Itterate all reference layers
   for (const [key, val] of Object.entries(lyrids)) {
     // Check layer is not none
-    if (!val){continue;}
+    if (!val) { continue; }
     // Check passed lyr is an array
     let lyrdefn = val;
     if (!Array.isArray(lyrdefn)) {
       lyrdefn = [lyrdefn];
     }
-    // Setup layer references
-    let lyrs_hide = [];
-    let lyrs_show = [];
     // Itterate layers
     for (const lyr of lyrdefn) {
       // Setup layer id
@@ -43,22 +43,24 @@ function toggle_lyr(mapid, dsid, lyrids, lyrkey) {
         lyrs_hide.push(lyr_id)
       }
     }
-    // Show/hide layer
-    for (let lyr_id in lyrs_hide) {
-      // Hide layer
-      mvm.getJimuMapViewById(ds_id).jimuLayerViews[lyr_id].view.visible = false;
-      debug_log("RRC Mod: " + lyr_id + " hidden");
-    }
-    for (let lyr_id in lyrs_show) {
-      // Show layer
-      mvm.getJimuMapViewById(ds_id).jimuLayerViews[lyr_id].view.visible = true;
-      debug_log("RRC Mod: " + lyr_id + " shown");
-    }
   }
+  // Show/hide layer
+  for (const lyr_id in lyrs_hide) {
+    // Hide layer
+    let lyrref = lyrs_hide[lyr_id]
+    mvm.getJimuMapViewById(ds_id).jimuLayerViews[lyrref].view.visible = false;
+    //debug_log("RRC Mod: " + lyrref + " hidden");
+  }
+  for (const lyr_id in lyrs_show) {
+    // Show layer
+    let lyrref = lyrs_show[lyr_id]
+    mvm.getJimuMapViewById(ds_id).jimuLayerViews[lyrref].view.visible = true;
+    //debug_log("RRC Mod: " + lyrref + " shown");
+  }
+
   // Report change to console
   debug_log("RRC Mod: Layer config changed to " + lyrkey);
 }
-
 // Setup layer event function
 function attach_layer_events(widgetid, lyrkey) {
   d.querySelector("[data-widgetid=" + widgetid + "]")
@@ -67,7 +69,6 @@ function attach_layer_events(widgetid, lyrkey) {
       toggle_lyr(map_id, ds_id, lyr_ids, lyrkey);
     });
 }
-
 // Setup basemap event function
 function attach_basemap_events(widgetid, lyrkey) {
   d.querySelector("[data-widgetid=" + widgetid + "]")
