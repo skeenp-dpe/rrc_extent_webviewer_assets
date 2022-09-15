@@ -46,35 +46,12 @@ function toggle_lyr(mapid, dsid, lyrids, lyrkey) {
   debug_log("RRC Mod: Layer config changed to " + lyrkey);
 }
 
-function hide_cell(element){
-  element.style.display = "none"
-}
-function show_cell(element){
-  element.style.display = "table-cell"
-}
-
-function toggle_tableoption(cls){
-  tblopts = document.getElementsByClassName('fopt');
-  if (cls != 'none'){
-    for (let i = 0; i < tblopts.length; i++) {
-      hide(tblopts[i]);
-    }
-  } else {
-    cls = 'fopt'
-  }
-    tblopt = document.getElementsByClassName(cls);
-    for (let i = 0; i < tblopt.length; i++) {
-      show(tblopts[i]);
-    }
-}
-
 // Setup layer event function
-function attach_layer_events(widgetid, lyrkey, optclass) {
+function attach_layer_events(widgetid, lyrkey) {
   d.querySelector("[data-widgetid=" + widgetid + "]")
     .querySelector("a")
     .addEventListener("click", function () {
       toggle_lyr(map_id, ds_id, lyr_ids, lyrkey);
-      toggle_tableoption(optclass);
     });
 }
 
