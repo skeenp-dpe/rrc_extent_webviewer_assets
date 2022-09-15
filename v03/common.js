@@ -27,19 +27,30 @@ function toggle_lyr(mapid, dsid, lyrids, lyrkey) {
     if (!Array.isArray(lyrdefn)) {
       lyrdefn = [lyrdefn];
     }
+    // Setup layer references
+    let lyrs_hide = [];
+    let lyrs_show = [];
     // Itterate layers
     for (const lyr of lyrdefn) {
       // Setup layer id
       let lyr_id = mapid + "-" + dsid + "-" + lyr;
-      // Setup visible flag
-      let v = false;
       // Check layer exists and is the target
       if (vw.jimuLayerViews[lyr_id] && key == lyrkey) {
-        v = true;
+        lyrs_show.push(lyr_id)
+      } else {
+        lyrs_hide.push(lyr_id)
       }
-      debug_log("RRC Mod: " + lyr_id + " visible: " + v);
-      // Enable/disable layer
-      mvm.getJimuMapViewById(ds_id).jimuLayerViews[lyr_id].view.visible = v;
+    }
+    // Show/hide layer
+    for (let lyr_id in lyrs_hide) {
+      // Hide layer
+      mvm.getJimuMapViewById(ds_id).jimuLayerViews[lyr_id].view.visible = false;
+      debug_log("RRC Mod: " + lyr_id + " hidden");
+    }
+    for (let lyr_id in lyrs_show) {
+      // Show layer
+      mvm.getJimuMapViewById(ds_id).jimuLayerViews[lyr_id].view.visible = true;
+      debug_log("RRC Mod: " + lyr_id + " shown");
     }
   }
   // Report change to console
