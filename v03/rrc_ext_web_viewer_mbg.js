@@ -20,11 +20,11 @@ const bm_ids = {
 //Attach events
 setTimeout(function () {
   // Attach layer events
-  attach_layer_events("widget_button_1", "w22");
-  attach_layer_events("widget_button_2", "w32");
-  attach_layer_events("widget_button_3", "w36");
-  attach_layer_events("widget_button_4", "w40");
-  attach_layer_events("widget_button_6", "hide");
+  attach_layer_events("widget_button_1", "w22", "fopt1");
+  attach_layer_events("widget_button_2", "w32", "fopt2");
+  attach_layer_events("widget_button_3", "w36", "fopt3");
+  attach_layer_events("widget_button_4", "w40", "fopt4");
+  attach_layer_events("widget_button_6", "hide", "none");
   // Attach basemap events
   attach_basemap_events("widget_button_sat", "sat");
   attach_basemap_events("widget_button_base", "topo");
