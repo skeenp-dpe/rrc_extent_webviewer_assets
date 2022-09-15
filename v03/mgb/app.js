@@ -13,7 +13,7 @@ const lyr_ids = {
 // Set basemap names
 const bm_ids = {
   topo: "base_osmnorivers",
-  sat: ["base_nswimagery","base_reflayer"], //"base_worldimagery"
+  sat: ["base_nswimagery","base_reflayer"],
   event2021: ["base_eventimagery","base_reflayer"]
 };
 //Attach events
