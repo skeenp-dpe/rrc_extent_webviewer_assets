@@ -4,17 +4,17 @@ const map_id = "widget_map_large";
 const ds_id = "ds_topo";
 // Set layer names
 const lyr_ids = {
-  w22: ["rrc_mbg_w22","rrc_mbg_w22_mask"],
-  w32: ["rrc_mbg_w32","rrc_mbg_w32_mask"],
-  w36: ["rrc_mbg_w36","rrc_mbg_w36_mask"],
-  w40: ["rrc_mbg_w40","rrc_mbg_w40_mask"],
+  w22: ["rrc_mbg_w22", "rrc_mbg_w22_mask"],
+  w32: ["rrc_mbg_w32", "rrc_mbg_w32_mask"],
+  w36: ["rrc_mbg_w36", "rrc_mbg_w36_mask"],
+  w40: ["rrc_mbg_w40", "rrc_mbg_w40_mask"],
   hide: null
 };
 // Set basemap names
 const bm_ids = {
   topo: "base_osmnorivers",
-  sat: ["base_nswimagery","base_reflayer"],
-  event2021: ["base_eventimagery","base_reflayer"]
+  sat: ["base_nswimagery", "base_reflayer"],
+  event2021: ["base_eventimagery", "base_reflayer"]
 };
 //Attach events
 setTimeout(function () {
