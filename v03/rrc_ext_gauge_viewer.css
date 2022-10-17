@@ -1,0 +1,53 @@
+body,
+table {
+    font-family: Arial;
+    font-size: 12px;
+    margin: 6px;
+    background: #fff
+}
+
+table th {background-color: #b8b7b4}
+
+.td-main {
+    border-color: #7e8c8d;
+    border-width: 0.8px;
+    border-style: solid;
+    text-align: center;
+}
+
+.td-major {
+    background-color: #bd0026;
+    font-weight: 700;
+    color: #ffffff
+}
+
+.td-moderate {
+    background-color: #fd8d3c;
+    font-weight: 700;
+}
+
+.td-minor {
+    background-color: #e8e235;
+    font-weight: 700;
+}
+
+strong {
+    font-size: 12px;
+}
+
+.td-upper {
+    background-color: #FEE090;
+}
+
+.td-target {
+    background-color: #bdc9e1;
+}
+
+.td-expected {
+    background-color: #0570b0;
+    color: #ecf0f1;
+}
+
+.td-indicated {
+    background-color: #c2e699;
+}

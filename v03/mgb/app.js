@@ -4,10 +4,10 @@ const map_id = "widget_map_large";
 const ds_id = "ds_topo";
 // Set layer names
 const lyr_ids = {
-  w22: ["rrc_mbg_w22", "rrc_mbg_w22_mask"],
-  w32: ["rrc_mbg_w32", "rrc_mbg_w32_mask"],
-  w36: ["rrc_mbg_w36", "rrc_mbg_w36_mask"],
-  w40: ["rrc_mbg_w40", "rrc_mbg_w40_mask"],
+  w22: ["rrc_mbg22", "rrc_mbg22_mask"],
+  w32: ["rrc_mbg32", "rrc_mbg32_mask"],
+  w36: ["rrc_mbg36", "rrc_mbg36_mask"],
+  w40: ["rrc_mbg40", "rrc_mbg40_mask"],
   hide: null
 };
 // Set basemap names
