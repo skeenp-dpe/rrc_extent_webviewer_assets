@@ -1,13 +1,13 @@
 //Set widget name
-const map_id = "widget_map_large";
+const map_id = "dataSource_1";
 //Set datasource names
 const ds_id = "ds_topo";
 // Set layer names
 const lyr_ids = {
-  w22: ["rrc_mbg_w22", "rrc_mbg_w22_mask"],
-  w32: ["rrc_mbg_w32", "rrc_mbg_w32_mask"],
-  w36: ["rrc_mbg_w36", "rrc_mbg_w36_mask"],
-  w40: ["rrc_mbg_w40", "rrc_mbg_w40_mask"],
+  w22: ["rrc_mur22", "rrc_mur22_mask"],
+  w32: ["rrc_mur32", "rrc_mur32_mask"],
+  w36: ["rrc_mur36", "rrc_mur36_mask"],
+  w40: ["rrc_mur40", "rrc_mur40_mask"],
   hide: null
 };
 // Set basemap names
