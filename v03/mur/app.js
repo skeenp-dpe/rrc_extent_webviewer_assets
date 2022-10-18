@@ -1,7 +1,7 @@
 //Set widget name
 const map_id = "widget_map_large";
 //Set datasource names
-const ds_id = "ds_topo";
+const ds_id = "dataSource_1";
 // Set layer names
 const lyr_ids = {
   y15: ["rrc_mur15", "rrc_mur15_mask"],
