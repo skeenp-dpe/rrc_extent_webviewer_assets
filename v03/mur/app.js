@@ -1,13 +1,13 @@
 //Set widget name
-const map_id = "dataSource_1";
+const map_id = "widget_map_large";
 //Set datasource names
 const ds_id = "ds_topo";
 // Set layer names
 const lyr_ids = {
-  w22: ["rrc_mur22", "rrc_mur22_mask"],
-  w32: ["rrc_mur32", "rrc_mur32_mask"],
-  w36: ["rrc_mur36", "rrc_mur36_mask"],
-  w40: ["rrc_mur40", "rrc_mur40_mask"],
+  y15: ["rrc_mur15", "rrc_mur15_mask"],
+  y25: ["rrc_mur25", "rrc_mur25_mask"],
+  y30: ["rrc_mur30", "rrc_mur30_mask"],
+  y40: ["rrc_mur40", "rrc_mur40_mask"],
   hide: null
 };
 // Set basemap names
@@ -19,10 +19,10 @@ const bm_ids = {
 //Attach events
 setTimeout(function () {
   // Attach layer events
-  attach_layer_events("widget_button_1", "w22");
-  attach_layer_events("widget_button_2", "w32");
-  attach_layer_events("widget_button_3", "w36");
-  attach_layer_events("widget_button_4", "w40");
+  attach_layer_events("widget_button_1", "y15");
+  attach_layer_events("widget_button_2", "y25");
+  attach_layer_events("widget_button_3", "y30");
+  attach_layer_events("widget_button_4", "y40");
   attach_layer_events("widget_button_5", "hide");
   // Attach basemap events
   attach_basemap_events("widget_button_sat", "sat");
