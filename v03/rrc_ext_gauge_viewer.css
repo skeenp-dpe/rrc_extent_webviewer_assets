@@ -1,8 +1,8 @@
-body,
-table {
+body {
     font-family: Arial;
-    font-size: 12px;    background: #fff
-    ;margin: 0
+    font-size: 12px;
+    background: #fff;
+    margin: 0
 }
 
 .logo {
@@ -32,9 +32,11 @@ table {
 }
 
 .main {
-    padding: 24px;
-    padding-top: 56px;
+    padding: 32px;
+    text-align: center;
 }
+
+.content {padding-top:40px;}
 
 a {
     color: inherit;
@@ -74,7 +76,6 @@ a {
 }
 
 table {
-    top:40px;
     margin: 10px;
     text-align: center;
     border-collapse: collapse;
