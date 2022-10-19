@@ -128,6 +128,17 @@ thead tr th {
     font-style:italic;
 }
 
+.td-note{
+    text-align:center;
+}
+
+.td-return{
+    font-style:italic;
+    text-align:center;
+    color: #002664 !important;
+    font-weight:700;
+}
+
 .tr-break td{
     background-color: #fff !important;
     border-width:0px;
