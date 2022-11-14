@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    font-size: 12px;
+    font-size: 14px;
     background: #fff;
     margin: 0
 }
@@ -25,7 +25,7 @@ body {
 .footer {
     width: 100%;
     color: #fff;
-    background-color: #d7153a;
+    background-color: #002664;
     text-align: center;
     display: block;
     padding: 1px 0;
@@ -33,10 +33,11 @@ body {
 
 .main {
     padding: 32px;
-    text-align: center;
 }
 
-.content {padding-top:40px;}
+.content {
+    padding-top:40px;
+}
 
 a {
     color: inherit;
@@ -47,9 +48,18 @@ a {
     font-weight: 700;
     color: #ffffff
 }
+.td-major-sub {
+    background-color: #efbfc9;
+    font-weight: 700;
+    color: #ffffff
+}
 
 .td-moderate {
     background-color: #fd8d3c;
+    font-weight: 700;
+}
+.td-moderate-sub {
+    background-color: #ffe3ce;
     font-weight: 700;
 }
 
@@ -57,22 +67,27 @@ a {
     background-color: #e8e235;
     font-weight: 700;
 }
+.td-minor-sub {
+    background-color: #f9f8cd;
+    font-weight: 700;
+}
 
 .td-upper {
-    background-color: #FEE090;
+    background-color: #FEE090 !important;
 }
 
 .td-target {
-    background-color: #bdc9e1;
+    background-color: #bdc9e1 !important;
 }
 
 .td-expected {
-    background-color: #0570b0;
-    color: #ecf0f1;
+    background-color: #0570b0 !important;
+    color: #ecf0f1 !important;
 }
 
-.td-indicated {
+.td-oplimit {
     background-color: #c2e699;
+    font-weight: 700;
 }
 
 table {
@@ -89,11 +104,32 @@ th {
 }
 
 tbody tr td:first-child {
-    color: #000 !important;
-    background-color: #ebebeb !important
+    color: #000;
+    background-color: #ebebeb
 }
 
 thead tr th {
-    color: #000 !important;
-    background-color: #cdd3d6 !important
+    color: #000;
+    background-color: #cdd3d6
+}
+
+.strong{
+    font-weight: 700;
+    text-align: left; 
+}
+
+.td-range{
+    width:10%;
+    font-weight: 700;
+}
+
+
+.td-event{
+    font-style:italic;
+}
+
+.tr-break td{
+    background-color: #fff !important;
+    border-width:0px;
+    text-align:center;
 }
