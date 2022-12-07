@@ -1,7 +1,7 @@
 //Set widget name
 const map_id = "widget_map_large";
 //Set datasource names
-const ds_id = "dataSource_1";
+const ds_id = "dataSource_2";
 // Set layer names
 const lyr_ids = {
   w22: "rrc_l22_wp15",
