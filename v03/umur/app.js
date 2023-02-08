@@ -6,6 +6,7 @@ const ds_id = "dataSource_1";
 const lyr_ids = {
   d25: ["rrc_umur25", "rrc_umur25_mask"],
   d30: ["rrc_umur30", "rrc_umur30_mask"],
+  d35: ["rrc_umur35", "rrc_umur35_mask"],
   d40: ["rrc_umur40", "rrc_umur40_mask"],
   hide: null
 };
@@ -20,6 +21,7 @@ setTimeout(function () {
   // Attach layer events
   attach_layer_events("widget_button_1", "d25");
   attach_layer_events("widget_button_2", "d30");
+  attach_layer_events("widget_35", "d35");
   attach_layer_events("widget_button_3", "d40");
   attach_layer_events("widget_button_5", "hide");
   // Attach basemap events
