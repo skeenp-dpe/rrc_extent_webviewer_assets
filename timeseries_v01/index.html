@@ -118,7 +118,7 @@
                                 <strong class='heading'>Scenario: <span
                                         data-placeholder="selected_flow">selected_flow</span> at <span
                                         data-placeholder="ref_gauge">ref_gauge</span> after <span
-                                        data-placeholder="ref_days">ref_days</span></strong><br>
+                                        data-placeholder="ref_time">ref_time</span></strong><br>
                             </span>
 
                             <p><strong>Flow Options</strong><br>
@@ -164,7 +164,8 @@
                             <span id="scn_details_noselection">Please select a scenario from the above for specific
                                 details</span>
                             <span id="scn_details">
-                                <p>This option is for a flow limit of <span
+                                <p>Sample proof of concept</p>
+                                <p class="'w3-hide'">This option is for a flow limit of <span
                                         data-placeholder="selected_flow">selected_flow</span> at <span
                                         data-placeholder="ref_gauge">ref_gauge</span>.
                                     The mapping shows the upper limit of inundation at this flow rate (light blue) plus
@@ -241,7 +242,7 @@
 
         // Define data
         reach_title = "Murray River"
-        reach_subtitle = "Yarrawonga Weir to Wakool River"
+        reach_subtitle = "Yarrawonga Weir to Wakool River [PROOF OF CONCEPT]"
         reach_itemid = '035d21d9f141493fbb26c3ebdd0a8b3d'
 
         reach_desc = 'This app focuses on the Murrumbidgee River between the Burrinjuck Dam and its confluence with the Murray River, including the Yanco Creek system.'
@@ -260,10 +261,10 @@
         option_selected = 0
 
         timeseries_defns = {
-            0: { "label": "1 day", "lyrids": ['rrc_w22_wp1',] },
-            1: { "label": "2 days", "lyrids": ['rrc_w32_wp1',]  },
-            2: { "label": "3 days", "lyrids": ['rrc_w36_wp1',] },
-            3: { "label": "4 days", "lyrids": ['rrc_w40_wp1',]  }
+            0: { "label": "1 timeunit", "lyrids": ['rrc_w22_wp1',] },
+            1: { "label": "2 timeunits", "lyrids": ['rrc_w32_wp1',]  },
+            2: { "label": "3 timeunits", "lyrids": ['rrc_w36_wp1',] },
+            3: { "label": "4 timeunits", "lyrids": ['rrc_w40_wp1',]  }
         }
 
         basemap_defns = {
@@ -337,7 +338,7 @@
             {image_idx = 0}
             else 
             {image_idx = next_idx}
-            $("[data-placeholder='ref_days']").html(timeseries_defns[image_idx]['label'])
+            $("[data-placeholder='ref_time']").html(timeseries_defns[image_idx]['label'])
             toggle_lyr(timeseries_defns, image_idx)
         }
 
