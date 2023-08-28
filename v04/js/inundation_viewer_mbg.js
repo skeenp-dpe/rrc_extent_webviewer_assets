@@ -571,13 +571,13 @@ let app_data = {
     "basemaps": {
         "1": {
             "label": "Satellite (ESRI)",
-            "lyrids": ["base_esriimagery", "base_hybrid", "base_hybrid_labels", "base_hybrid_reference"],
+            "lyrids": ["base_esriimagery", "base_hybrid_labels", "base_hybrid_reference"],
             "legend_basemap": 'assets/nsw_basemap_legend.pdf',
             "legend_extra": null
         },
         "2": {
             "label": "Satellite (NSW SS)",
-            "lyrids": ["base_nswss_imagery", "base_hybrid", "base_hybrid_labels", "base_hybrid_reference"],
+            "lyrids": ["base_nswss_imagery", "base_hybrid_labels", "base_hybrid_reference"],
             "legend_basemap": 'assets/nsw_basemap_legend.pdf',
             "legend_extra": null
         },
@@ -601,9 +601,9 @@ let app_data = {
         },
         "6": {
             "label": "2021 Aerial",
-            "lyrids": ["base_eventimagery", "base_hybrid", "base_hybrid_labels", "base_hybrid_reference", "base_eventimagery_missing"],
+            "lyrids": ["base_eventimagery", "base_hybrid_labels", "base_hybrid_reference", "base_eventimagery_missing", "base_eventimagery_loading"],
             "legend_basemap": 'assets/nsw_basemap_legend.pdf',
-            "legend_extra": "<div id='lgn_noimg' class=legend-item><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQAQMAAAA26i3WAAAABlBMVEX////tHCQujCkBAAAAK0lEQVQI12Nobm5mYGdnZ+Dj42OQkZFhsLCwYCgoKGB48OABw8GDBwnJAwDnwxHvlNWE5wAAAABJRU5ErkJggg==' style='width:26px;height:14px;background:#fff;'> No imagery available</div>"
+            "legend_extra": "<div id='lgn_loading' class='legend-item'><svg width='26' height='14' version='1.1' viewBox='0 0 26 14' xmlns='http://www.w3.org/2000/svg'><rect x='0' y='0' width='26' height='14' fill='#8055f1'></rect></svg> Imagery available and loading</div><div id='lgn_noimg' class=legend-item><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQAQMAAAA26i3WAAAABlBMVEX////tHCQujCkBAAAAK0lEQVQI12Nobm5mYGdnZ+Dj42OQkZFhsLCwYCgoKGB48OABw8GDBwnJAwDnwxHvlNWE5wAAAABJRU5ErkJggg==' style='width:26px;height:14px;background:#fff;'> No imagery available</div>"
         }
     }
 };
