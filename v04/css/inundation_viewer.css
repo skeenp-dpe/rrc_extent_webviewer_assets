@@ -158,6 +158,8 @@ strong {
 
 .legend-item {padding:0px 0px 5px 5px;}
 
+.program-link {padding-bottom: 15px;}
+
 @media screen and (max-width:767px) {
     .page-content {
         flex-direction: column
